@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d1b">
+<meta name="description" content="Plixer — smarter tools for better productivity. Organize, create, and collaborate in one place.">
+<title>Rizul Srivastava | Plixer — Section AN</title>
+<style>
+:root{--bg:#080d1b;--panel:#0d1528;--panel2:#111d35;--text:#f5f7ff;--muted:#b5c0d9;--line:#24314d;--accent:#6755ff;--accent2:#3e83ff;--glow:rgba(91,78,255,.24);--header:rgba(8,13,27,.82)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 78% 22%,rgba(36,62,154,.17),transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.container{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+header{height:76px;position:sticky;top:0;z-index:20;background:var(--header);backdrop-filter:blur(18px);border-bottom:1px solid rgba(115,140,190,.16)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:760;letter-spacing:-1px}.brand-mark{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;background:linear-gradient(140deg,#9c5cff,#4e4cff 58%,#27b6ff);color:white;font-size:24px;font-weight:900;box-shadow:0 5px 22px var(--glow)}.nav-links{display:flex;align-items:center;gap:35px;color:var(--muted);font-size:15px}.nav-links a{transition:color .2s}.nav-links a:hover,.nav-links a.active{color:#8f85ff}.nav-actions{display:flex;align-items:center;gap:14px}.icon-btn,.menu-btn{border:1px solid transparent;background:transparent;color:var(--text);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:20px}.icon-btn:hover,.menu-btn:hover{background:var(--panel2);border-color:var(--line)}.btn{border:0;border-radius:999px;padding:13px 22px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:650;transition:transform .22s,box-shadow .22s,background .22s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(115deg,#6952ff,#3e70ff);color:white;box-shadow:0 10px 26px rgba(77,79,255,.2)}.btn-primary:hover{box-shadow:0 14px 34px rgba(77,79,255,.35)}.btn-outline{border:1px solid #7b8baa;background:rgba(8,13,27,.25);color:var(--text)}.btn-outline:hover{background:var(--panel2)}.menu-btn{display:none}
+.hero{min-height:500px;display:grid;grid-template-columns: .95fr 1.05fr;gap:48px;align-items:center;padding-top:54px;padding-bottom:58px;position:relative}.hero:before{content:"";position:absolute;right:-13%;top:9%;width:54%;height:80%;z-index:-1;background:radial-gradient(ellipse,rgba(45,76,213,.2),transparent 65%);filter:blur(12px)}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border:1px solid rgba(123,103,255,.6);border-radius:999px;background:rgba(72,56,179,.16);color:#d4d0ff;font-size:13px;letter-spacing:.1px}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:#8d78ff;box-shadow:0 0 12px #8d78ff}.hero h1{font-size:clamp(48px,6vw,76px);line-height:1.02;letter-spacing:-3.8px;margin:20px 0 19px;font-weight:790}.gradient-text{background:linear-gradient(100deg,#a66aff,#5d6cff 58%,#46b5ff);background-clip:text;-webkit-background-clip:text;color:transparent}.hero-copy{max-width:500px;color:var(--muted);font-size:17px;margin:0 0 28px}.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}.hero-note{font-size:12px;color:#8492b1;margin-top:18px}.visual{position:relative;min-width:0;animation:float 7s ease-in-out infinite}.orb{position:absolute;border-radius:50%;filter:blur(.3px);z-index:-1}.orb.one{width:250px;height:250px;right:0;top:-26px;background:linear-gradient(135deg,rgba(91,65,255,.22),rgba(26,91,255,.02));border:1px solid rgba(103,98,255,.18)}.orb.two{width:180px;height:180px;left:-20px;bottom:20px;background:linear-gradient(135deg,rgba(29,122,255,.2),transparent);filter:blur(2px)}.dashboard{position:relative;background:linear-gradient(145deg,#101a30,#080e1d);border:1px solid #455478;border-radius:20px;padding:13px;box-shadow:0 28px 75px rgba(0,0,0,.48),0 0 50px rgba(61,73,255,.12);transform:perspective(1000px) rotateY(-4deg) rotateX(1deg)}.dash-top{display:flex;align-items:center;justify-content:space-between;padding:7px 8px 14px;border-bottom:1px solid #202c45}.dash-brand{display:flex;align-items:center;gap:8px;font-weight:750}.mini-mark{width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#b45aff,#4d64ff);display:grid;place-items:center;font-size:14px}.search{border:1px solid #24304a;border-radius:8px;padding:6px 11px;color:#8391af;font-size:11px;width:140px}.dash-body{display:grid;grid-template-columns:110px 1fr;gap:13px;padding-top:13px;min-height:270px}.dash-side{display:flex;flex-direction:column;gap:8px;border-right:1px solid #202c45;padding-right:10px}.side-item{font-size:11px;color:#9cabc8;padding:8px;border-radius:7px}.side-item.selected{background:#232b65;color:#fff}.dash-main h3{margin:2px 0 2px;font-size:18px;letter-spacing:-.5px}.dash-sub{font-size:10px;color:#8d9bb8;margin-bottom:15px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#111e35;border:1px solid #1d2b47;border-radius:10px;padding:11px}.stat span{display:block;color:#aab7d1;font-size:10px}.stat strong{display:block;font-size:20px;margin:4px 0}.bar{height:4px;background:#263550;border-radius:5px;overflow:hidden}.bar i{display:block;width:68%;height:100%;background:linear-gradient(90deg,#47b7ff,#7964ff);border-radius:5px}.dash-lower{display:grid;grid-template-columns:1.3fr .7fr;gap:9px;margin-top:10px}.activity,.focus{background:#111e35;border:1px solid #1d2b47;border-radius:10px;padding:12px}.activity h4,.focus h4{font-size:11px;margin:0 0 10px}.activity-row{display:flex;align-items:center;gap:8px;margin:9px 0;font-size:10px;color:#d4ddf0}.file-icon{width:24px;height:25px;border-radius:6px;display:grid;place-items:center;font-size:12px;background:#283f92}.file-icon.pink{background:#8b245d}.file-icon.green{background:#116b5c}.activity-row small{display:block;color:#8492b1;font-size:9px}.focus{text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}.focus .bolt{font-size:29px;color:#a69cff}.focus p{font-size:11px;margin:5px 0;color:#cad5ed}.features{border-top:1px solid rgba(115,140,190,.18);border-bottom:1px solid rgba(115,140,190,.18);padding:40px 0 46px;background:linear-gradient(180deg,rgba(10,16,31,.4),rgba(7,12,24,.2))}.section-kicker{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:#8980ff;font-weight:750}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:24px}.section-head h2,.about h2,.cta h2{font-size:clamp(28px,3vw,38px);letter-spacing:-1.4px;line-height:1.15;margin:8px 0}.section-head p{color:var(--muted);margin:8px 0 0;max-width:580px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature-card{background:linear-gradient(145deg,rgba(15,24,44,.84),rgba(8,14,27,.86));border:1px solid var(--line);border-radius:15px;padding:22px;transition:transform .25s,border-color .25s,background .25s;min-height:170px}.feature-card:hover{transform:translateY(-5px);border-color:#635aff;background:linear-gradient(145deg,rgba(28,32,69,.9),rgba(8,14,27,.9))}.feature-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;font-size:20px;margin-bottom:14px;background:linear-gradient(135deg,#6d39ff,#3f5dff);box-shadow:0 6px 18px rgba(78,70,255,.2)}.feature-card:nth-child(2) .feature-icon{background:linear-gradient(135deg,#167cff,#2452da)}.feature-card:nth-child(3) .feature-icon{background:linear-gradient(135deg,#12c78a,#087d74)}.feature-card:nth-child(4) .feature-icon{background:linear-gradient(135deg,#ff3d9a,#a51272)}.feature-card:nth-child(5) .feature-icon{background:linear-gradient(135deg,#ff8b28,#d54d12)}.feature-card:nth-child(6) .feature-icon{background:linear-gradient(135deg,#18d3d0,#0a8b99)}.feature-card h3{font-size:16px;margin:0 0 6px}.feature-card p{font-size:13px;color:var(--muted);margin:0;max-width:300px}
+.projects{padding:70px 0 18px}.projects-intro{color:var(--muted);max-width:650px;margin:8px 0 25px}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project-card{border:1px solid var(--line);border-radius:17px;padding:23px;background:linear-gradient(145deg,rgba(16,26,48,.92),rgba(8,14,27,.9));transition:transform .25s,border-color .25s}.project-card:hover{transform:translateY(-4px);border-color:#7565ff}.project-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.project-symbol{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#7048ff,#347cff);font-size:22px}.project-status{font-size:11px;color:#b8afff;border:1px solid #5a4bb3;background:#30275d66;padding:5px 9px;border-radius:999px;white-space:nowrap}.project-card h3{font-size:19px;margin:0 0 7px}.project-card p{color:var(--muted);font-size:14px;margin:0 0 15px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tags span{font-size:11px;border:1px solid var(--line);border-radius:7px;padding:5px 8px;color:#bfc9e1}.project-foot{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:12px;color:#929fbd}.light-mode .project-card{background:rgba(255,255,255,.8)}@media(max-width:700px){.projects{padding:48px 0 5px}.project-grid{grid-template-columns:1fr}.project-card{padding:19px}}
+.about{padding:76px 0;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about p{color:var(--muted);max-width:540px}.about-panel{border:1px solid var(--line);border-radius:18px;padding:24px;background:linear-gradient(135deg,#101b34,#0b1223);position:relative;overflow:hidden}.about-panel:after{content:"✦";position:absolute;right:22px;top:12px;font-size:70px;color:rgba(123,105,255,.12)}.quote{font-size:22px;line-height:1.4;letter-spacing:-.5px;max-width:400px}.quote strong{color:#9c8aff}.quote-foot{color:#8e9cba;font-size:12px;margin-top:20px}.cta{margin:0 auto 70px;padding:36px;border:1px solid rgba(113,99,255,.38);border-radius:22px;background:radial-gradient(ellipse at 80% 20%,rgba(80,77,255,.2),transparent 40%),linear-gradient(120deg,#101a32,#0b1122);display:flex;align-items:center;justify-content:space-between;gap:24px}.cta p{margin:8px 0 0;color:var(--muted)}footer{border-top:1px solid rgba(115,140,190,.18);padding:26px 0 18px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:22px}.footer-brand .brand{font-size:21px}.footer-brand .brand-mark{width:30px;height:30px;font-size:19px}.tagline{font-size:12px;color:#8e9cba;margin:5px 0 0 40px}.footer-links{display:flex;gap:25px;color:var(--muted);font-size:13px}.socials{display:flex;gap:13px;color:#aab7d1}.socials a{width:29px;height:29px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:12px}.copyright{color:#7f8daa;font-size:11px;text-align:right;margin-top:18px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#182542;border:1px solid #475a82;color:white;padding:12px 18px;border-radius:12px;box-shadow:0 12px 40px #0008;z-index:50;transition:all .25s;font-size:14px}.toast.show{opacity:1;transform:translate(-50%,0)}.light-mode{--bg:#f4f6ff;--panel:#fff;--panel2:#e9edff;--text:#10172b;--muted:#586581;--line:#d8def0;--header:rgba(244,246,255,.85);--glow:rgba(91,78,255,.12);background:radial-gradient(ellipse at 78% 22%,rgba(97,117,255,.15),transparent 32%),var(--bg)}.light-mode .dashboard,.light-mode .about-panel,.light-mode .cta{background:linear-gradient(145deg,#fff,#edf1ff);box-shadow:0 20px 55px rgba(42,55,100,.12)}.light-mode .stat,.light-mode .activity,.light-mode .focus{background:#edf1ff;border-color:#dce2f5}.light-mode .dash-top,.light-mode .dash-side{border-color:#dce2f5}.light-mode .side-item.selected{color:white}.light-mode .feature-card{background:rgba(255,255,255,.75)}.light-mode .btn-outline{background:rgba(255,255,255,.4)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){.nav-links{gap:19px}.hero{gap:25px;grid-template-columns:1fr 1fr}.hero h1{font-size:58px}.dash-body{grid-template-columns:83px 1fr}.side-item{padding:7px 5px}.feature-grid{grid-template-columns:repeat(2,1fr)}.about{gap:25px}.footer-links{gap:14px}}
+@media(max-width:700px){.container{width:min(100% - 34px,540px)}header{height:68px}.brand{font-size:23px}.brand-mark{width:32px;height:32px}.menu-btn{display:grid}.nav-actions .btn{display:none}.nav-links{display:none;position:absolute;top:67px;left:0;right:0;padding:18px 24px 24px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 5px;border-bottom:1px solid var(--line)}.nav-actions{gap:4px}.hero{grid-template-columns:1fr;padding-top:52px;padding-bottom:44px;gap:40px}.hero h1{font-size:clamp(48px,13vw,68px);letter-spacing:-2.8px}.hero-copy{font-size:16px}.visual{max-width:550px;width:100%;margin:auto}.dashboard{transform:none;padding:9px}.dash-body{grid-template-columns:80px 1fr;min-height:235px;gap:8px}.dash-main h3{font-size:15px}.stat{padding:8px}.stat strong{font-size:16px}.activity,.focus{padding:8px}.search{width:100px}.features{padding:38px 0}.section-head{display:block}.feature-grid{grid-template-columns:1fr 1fr;gap:10px}.feature-card{padding:17px;min-height:165px}.feature-card h3{font-size:15px}.feature-card p{font-size:12px}.about{grid-template-columns:1fr;padding:55px 0;gap:25px}.cta{padding:25px;display:block;margin-bottom:50px}.cta .btn{margin-top:20px}.footer-row{flex-wrap:wrap}.footer-links{order:3;width:100%;justify-content:space-between;flex-wrap:wrap}.socials{margin-left:auto}.copyright{text-align:left}}@media(max-width:390px){.feature-grid{grid-template-columns:1fr}.feature-card{min-height:auto}.dash-body{grid-template-columns:66px 1fr}.side-item{font-size:9px}.stats{gap:5px}.stat span{font-size:9px}.stat strong{font-size:14px}.dash-lower{grid-template-columns:1fr}.focus{display:none}.hero-buttons .btn{padding:12px 17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Plixer home"><span class="brand-mark">P</span><span>Plixer</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#features">Features</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">☼</button>
+      <a class="btn btn-primary" href="#contact">Get Started <span>↗</span></a>
+      <button class="menu-btn" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="container hero" id="home">
+  <div class="hero-content reveal">
+    <span class="eyebrow">B.Tech Student · GLA University · Section AN</span>
+    <h1>Hi, I’m<br><span class="gradient-text">Rizul Srivastava</span></h1>
+    <p class="hero-copy">I’m a first-year B.Tech student at GLA University, Mathura, in section AN. I’m interested in technology, coding, web development, and artificial intelligence, and I’m excited to keep learning by building useful projects.</p>
+    <div class="hero-buttons"><a class="btn btn-primary" href="#projects">Explore Projects <span>→</span></a><a class="btn btn-outline" href="#about">About Me</a></div>
+    <div class="hero-note">✦ First-Year B.Tech · GLA University, Mathura · Section AN</div>
+  </div>
+  <div class="visual" aria-label="Preview of the Plixer productivity dashboard">
+    <div class="orb one"></div><div class="orb two"></div>
+    <div class="dashboard">
+      <div class="dash-top"><div class="dash-brand"><span class="mini-mark">P</span> Plixer</div><div class="search">⌕ &nbsp; Search anything...</div><span>◉</span></div>
+      <div class="dash-body">
+        <aside class="dash-side"><div class="side-item selected">⌂ &nbsp; Home</div><div class="side-item">▤ &nbsp; Notes</div><div class="side-item">☑ &nbsp; Tasks</div><div class="side-item">▱ &nbsp; Files</div><div class="side-item">▦ &nbsp; Calendar</div><div class="side-item">⚙ &nbsp; Settings</div></aside>
+        <div class="dash-main"><h3>Good morning, creator! ✨</h3><div class="dash-sub">Stay focused. Keep growing.</div>
+          <div class="stats"><div class="stat"><span>Tasks done</span><strong>12/18</strong><div class="bar"><i></i></div></div><div class="stat"><span>Notes</span><strong>24</strong><span>Ideas captured</span></div><div class="stat"><span>Projects</span><strong>06</strong><span>In progress</span></div></div>
+          <div class="dash-lower"><div class="activity"><h4>Recent activity</h4><div class="activity-row"><span class="file-icon pink">▤</span><div>Project proposal<small>Updated 10 min ago</small></div></div><div class="activity-row"><span class="file-icon">✎</span><div>Study notes<small>Updated yesterday</small></div></div><div class="activity-row"><span class="file-icon green">✓</span><div>Team checklist<small>Completed today</small></div></div></div><div class="focus"><div class="bolt">ϟ</div><h4>Keep going!</h4><p>Small steps make big progress.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-head reveal"><div><div class="section-kicker">Made to make life easier</div><h2>Everything you need in one place</h2><p>Thoughtful tools and a clean interface help you stay organized, productive and creative.</p></div></div>
+    <div class="feature-grid">
+      <article class="feature-card reveal"><div class="feature-icon">ϟ</div><h3>Fast &amp; simple</h3><p>Get things done quickly with a clear, intuitive experience that stays out of your way.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">♧</div><h3>Collaborate</h3><p>Bring people and ideas together. Great work is even better when it's shared.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">♢</div><h3>Secure by design</h3><p>Your work deserves care. Keep your projects organized and in your control.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">☁</div><h3>Cloud-ready</h3><p>Keep your workspace accessible and ready for wherever inspiration strikes.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">▣</div><h3>Mobile friendly</h3><p>A responsive experience that looks great on phones, tablets and desktops.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">✦</div><h3>Always improving</h3><p>A flexible foundation for new ideas, fresh features and bigger possibilities.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="container projects" id="projects">
+  <div class="reveal">
+    <div class="section-kicker">Learning by building</div>
+    <h2>Projects I'm exploring</h2>
+    <p class="projects-intro">A beginner-friendly project roadmap focused on practical programming skills. Plixer is the current portfolio project; the other ideas are good next builds to complete and add to GitHub.</p>
+  </div>
+  <div class="project-grid">
+    <article class="project-card reveal">
+      <div class="project-top"><div class="project-symbol">✦</div><span class="project-status">Current project</span></div>
+      <h3>Plixer — Personal Portfolio</h3>
+      <p>A responsive personal website to introduce myself, showcase projects, list skills, and make it easy to get in touch.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span></div>
+      <div class="project-foot">Skills practiced: layout, responsive design, animations, navigation</div>
+    </article>
+    <article class="project-card reveal">
+      <div class="project-top"><div class="project-symbol">✓</div><span class="project-status">Suggested next build</span></div>
+      <h3>Student Task Tracker</h3>
+      <p>A simple study planner where students can add assignments, mark tasks complete, and filter work by pending or completed status.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span></div>
+      <div class="project-foot">Skills to practice: DOM events, arrays, CRUD basics, browser storage</div>
+    </article>
+    <article class="project-card reveal">
+      <div class="project-top"><div class="project-symbol">∑</div><span class="project-status">Suggested next build</span></div>
+      <h3>Student Grade Calculator</h3>
+      <p>Enter marks for subjects to calculate total, percentage, and a grade with clear validation for missing or invalid values.</p>
+      <div class="tags"><span>C or Python</span><span>Conditions</span><span>Functions</span><span>Input Validation</span></div>
+      <div class="project-foot">Skills to practice: variables, operators, if/else, loops, functions</div>
+    </article>
+    <article class="project-card reveal">
+      <div class="project-top"><div class="project-symbol">🎯</div><span class="project-status">Suggested next build</span></div>
+      <h3>Number Guessing Game</h3>
+      <p>A small game that picks a random number, gives higher/lower hints, counts attempts, and lets the player start again.</p>
+      <div class="tags"><span>Python</span><span>Random</span><span>Loops</span><span>Conditionals</span></div>
+      <div class="project-foot">Skills to practice: problem-solving, loops, comparisons, basic debugging</div>
+    </article>
+  </div>
+</section>
+
+<section class="container about" id="about">
+  <div class="reveal"><div class="section-kicker">About me</div><h2>Learning today.<br><span class="gradient-text">Building for tomorrow.</span></h2><p>I’m Rizul Srivastava, a first-year B.Tech student at GLA University, Mathura (Section AN). I enjoy exploring technology and learning about programming, web development, and AI. My goal is to strengthen my technical foundation, improve my problem-solving skills, and create practical projects as I grow as a developer.</p><a class="btn btn-outline" href="#projects">View my projects <span>→</span></a></div>
+  <div class="about-panel reveal"><div class="quote">“The secret to getting ahead is getting started. The secret to getting started is <strong>breaking your complex tasks into small, manageable tasks.</strong>”</div><div class="quote-foot">Rizul Srivastava · B.Tech, GLA University · Section AN</div></div>
+</section>
+<section class="container cta reveal" id="pricing"><div><div class="section-kicker">Your next chapter starts here</div><h2>Ready to make something great?</h2><p>Start with an idea. Build something meaningful. Make it yours.</p></div><a class="btn btn-primary" href="#contact">Get started <span>→</span></a></section>
+</main>
+<footer id="contact">
+  <div class="container"><div class="footer-row"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">P</span><span>Plixer</span></a><div class="tagline">Better ideas. Bigger dreams.</div></div><nav class="footer-links" aria-label="Footer navigation"><a href="#home">Home</a><a href="#features">Features</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="mailto:hello@plixer.example">Contact</a></nav><div class="socials"><a href="#contact" aria-label="GitHub">gh</a><a href="#contact" aria-label="Twitter">𝕏</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="LinkedIn">in</a></div></div><div class="copyright">© <span id="year"></span> Plixer. A student website project.</div></div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks'),themeToggle=document.getElementById('themeToggle'),toast=document.getElementById('toast');
+menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'✕':'☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
+themeToggle.addEventListener('click',()=>{document.body.classList.toggle('light-mode');const light=document.body.classList.contains('light-mode');themeToggle.textContent=light?'☾':'☼';themeToggle.setAttribute('aria-label',light?'Switch to dark theme':'Switch to light theme');showToast(light?'Light theme enabled':'Dark theme enabled')});
+function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(window.plixerToastTimer);window.plixerToastTimer=setTimeout(()=>toast.classList.remove('show'),2400)}
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const sections=[...document.querySelectorAll('main section[id]')],navAnchors=[...navLinks.querySelectorAll('a')];
+window.addEventListener('scroll',()=>{let current='home';sections.forEach(section=>{if(window.scrollY>=section.offsetTop-130)current=section.id});navAnchors.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))},{passive:true});
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('a[href="#contact"]').forEach(a=>{a.addEventListener('click',e=>{if(a.getAttribute('href')==='#contact'&&a.textContent.toLowerCase().includes('start')){e.preventDefault();document.getElementById('contact').scrollIntoView({behavior:'smooth'});showToast('Welcome to Plixer — contact section reached!')}})});
+</script>
+</body>
+</html>
