@@ -1,1 +1,0 @@
-# Rizul-Srivastava.plixer
